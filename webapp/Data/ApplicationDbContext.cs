@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using webapp.Models;
 
 namespace webapp.Data
 {
@@ -9,5 +10,6 @@ namespace webapp.Data
             : base(options)
         {
         }
+        public DbSet<webapp.Models.Quiz>? Quiz { get; set; }
     }
 }
